@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+<script defer src="bundle.js"></script></head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-tasks"></i> Todo List</h1>
+      <button id="add-project" aria-label="Add new project"><i class="fas fa-plus"></i> New Project</button>
+    </header>
+    <div class="sidebar">
+      <h2><i class="fas fa-folder"></i> Projects</h2>
+      <ul id="project-list" role="navigation" aria-label="Project list"></ul>
+    </div>
+    <main>
+      <h2 id="current-project">Default</h2>
+      <div class="controls">
+        <button id="add-todo" aria-label="Add new todo"><i class="fas fa-plus"></i> Add Todo</button>
+        <select id="filter-priority" aria-label="Filter by priority">
+          <option value="all">All Priorities</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <select id="sort-date" aria-label="Sort by date">
+          <option value="asc">Date Ascending</option>
+          <option value="desc">Date Descending</option>
+        </select>
+      </div>
+      <ul id="todo-list" role="list" aria-label="Todo list"></ul>
+    </main>
+  </div>
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"></div>
+</body>
+</html>
