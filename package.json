@@ -1,7 +1,7 @@
 {
   "name": "todo-list-app",
   "version": "1.0.0",
-  "description": "A modular todo list app with Webpack",  
+  "description": "A modular todo list app with Webpack",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --open",
@@ -31,7 +31,7 @@
   "overrides": {
     "rimraf": "^4.0.0",
     "glob": "^9.0.0"
-  },
+  },  
   "presets": [
     [
       "@babel/preset-env",
