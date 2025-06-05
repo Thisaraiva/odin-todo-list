@@ -1,6 +1,8 @@
 import { Project, ProjectManager } from './project';
 import { Todo } from './todo';
 
+const abc = '';
+
 export const Storage = () => {
   const saveProjects = (projects) => {
     // Filtra duplicatas mantendo o primeiro "Default" e projetos únicos

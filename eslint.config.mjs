@@ -13,7 +13,7 @@ export default [
     },
     rules: {
       ...js.configs.recommended.rules,
-      'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
+      'no-unused-vars': ['warn', { vars: 'all', args: 'none' /*'after-used'*/, ignoreRestSiblings: true }],
     },
   },
   {

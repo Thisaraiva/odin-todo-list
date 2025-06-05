@@ -1,7 +1,7 @@
 {
   "name": "todo-list-app",
   "version": "1.0.0",
-  "description": "A modular todo list app with Webpack",
+  "description": "A modular todo list app with Webpack",  
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --open",
